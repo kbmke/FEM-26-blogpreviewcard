@@ -20,6 +20,7 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+I am starting over with this challenge to practice my knowledge and refresh my skills.
 
 ### The challenge
 
@@ -108,9 +109,9 @@ Describe how you used AI tools (if any) during this project. This helps demonstr
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Kayla Ball](https://github.com/kbmke)
+- Frontend Mentor - [@kbmke](https://www.frontendmentor.io/profile/kbmke)
+
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
