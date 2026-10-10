@@ -1,10 +1,9 @@
 # Page Reset
-
 <!-- from https://www.joshwcomeau.com/css/custom-css-reset/ -->
 // page reset
 /*
 
-  1. Use a more-intuitive box-sizing model.
+1. Use a more-intuitive box-sizing model.
 */
 *,
 *::before,
@@ -77,9 +76,79 @@ h6 {
   9. Create a root stacking context
 */
 
-# root
-
-# __next {
-
+# root # __next {
   isolation: isolate;
 }
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Gray500: hsl(0, 0%, 42%);
+--Gray950: hsl(0, 0%, 7%);
+}
+@media only screen and (min-width: 375px) and (max-width: 769px) {
+  /* ABOVE CHANGES SETTINGS AT 375px SCREEN SIZE TO 769px SCREEN SIZE*/
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  /* ABOVE CHANGES SETTINGS AT 768px SCREEN SIZE TO 1440px SCREEN SIZE*/
+}
+
+/* PLACE ALL ELEMENT FORMATTING BELOW HERE*/
+
+html {
+    font-size: 16px;
+    font-family: figtree, sans-serif;
+  /* ABOVE EFFECTS ALL ELEMENTS */
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--yellow);
+
+  .attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+/* ABOVE EFFECTS BODY ELEMENTS */
+
+.abs {
+  position: absolute;
+}
+
+/* ABOVE GIVES ELEMENTS ABSOLUTE POSITION */
+
+.rel {
+  position: relative;
+}
+
+/* ABOVE GIVES ELEMENTS RELATIVE POSITION */
+
+.flexr {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ABOVE MAKES A FLEX ROW */
+
+.flexc {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ABOVE MAKES A FLEX COLUMN */
+
+.fcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ABOVE MAKES FLEX ELEMENTS CENTERED */
