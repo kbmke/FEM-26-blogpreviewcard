@@ -88,6 +88,7 @@ h6 {
     width: 20rem;
     border-radius: 1rem;
     padding: 1.2rem;
+    box-shadow:  .4rem .4rem 0 0  var(--gray950);
   }
 
     .card-img {
@@ -96,8 +97,8 @@ h6 {
     border-radius: .8rem;
 }
     .section {
-    margin: 1.2rem 0;
-    padding: .7rem;
+    margin: 1.2rem 0 .7rem 0;
+    padding: .5rem;
     background-color: var(--yellow);
     font-size: 1rem;
     font-weight: 800;
@@ -105,10 +106,23 @@ h6 {
     border-radius: .5rem;
     text-align: center;
 }
-.subject {
-    size: .2rem;
-    font-weight: 800;
+
+.publish-date {
+    font-size: .8rem;
+    color: var(--gray800);
+    margin: .5rem 0;
 }
+ .subject-link {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--gray950);
+    text-decoration: none;
+    margin: 1.3rem 0;
+}
+a:active {
+  color: var(--yellow);
+}
+
 .description {
     margin: 1rem 0;
     font-size: .9rem;
@@ -119,6 +133,11 @@ h6 {
     align-items: center;
     gap: .5rem;
     margin-top: 1.5rem;
+}
+.name {
+    font-size: .9rem;
+    font-weight: 800;
+    color: var(--gray950);
 }
 .avatar-img {
     width: 2.5rem;
