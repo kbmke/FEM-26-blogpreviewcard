@@ -1,20 +1,15 @@
-# Page Reset
-<!-- from https://www.joshwcomeau.com/css/custom-css-reset/ -->
-// page reset
-/*
-
-1. Use a more-intuitive box-sizing model.
+/* Page Reset
+   from https://www.joshwcomeau.com/css/custom-css-reset/
 */
+
+/* 1. Use a more-intuitive box-sizing model. */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/*
-  2. Remove default margin
-*/
-
+/* 2. Remove default margin */
 * {
   margin: 0;
 }
@@ -76,19 +71,59 @@ h6 {
   9. Create a root stacking context
 */
 
-# root # __next {
+#root #__next {
   isolation: isolate;
 }
 :root {
-    --Yellow: hsl(47, 88%, 63%);
---White: hsl(0, 0%, 100%);
---Gray500: hsl(0, 0%, 42%);
---Gray950: hsl(0, 0%, 7%);
-}
-@media only screen and (min-width: 375px) and (max-width: 769px) {
-  /* ABOVE CHANGES SETTINGS AT 375px SCREEN SIZE TO 769px SCREEN SIZE*/
+--yellow:hsl(47, 88%, 63%);
+--white: hsl(0, 0%, 100%);
+--gray500: hsl(0, 0%, 42%);
+--gray950: hsl(0, 0%, 7%);
 }
 
+  .card {
+    background-color: var(--white);
+    border: .1rem solid black;
+    margin: 8rem auto;
+    width: 20rem;
+    border-radius: 1rem;
+    padding: 1.2rem;
+  }
+
+    .card-img {
+    margin: 0 auto;
+    width: 18rem;
+    border-radius: .8rem;
+}
+    .section {
+    margin: 1.2rem 0;
+    padding: .7rem;
+    background-color: var(--yellow);
+    font-size: 1rem;
+    font-weight: 800;
+    width: 7rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.subject {
+    size: .2rem;
+    font-weight: 800;
+}
+.description {
+    margin: 1rem 0;
+    font-size: .9rem;
+    color: var(--gray500);
+}
+.creator {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1.5rem;
+}
+.avatar-img {
+    width: 2.5rem;
+    border-radius: 50%;
+}
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
   /* ABOVE CHANGES SETTINGS AT 768px SCREEN SIZE TO 1440px SCREEN SIZE*/
 }
@@ -110,10 +145,12 @@ body {
   .attribution {
     font-size: 0.6875rem;
     text-align: center;
+   
   }
 
   .attribution a {
     color: hsl(228, 45%, 44%);
+     text-align: center;
   }
 }
 
